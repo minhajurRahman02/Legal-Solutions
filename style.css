@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+    --primary-color: #B68C5A;
+    --primary-text-color: #414040;
+    --secondary-text-color: #707070;
+    --primary-font: "EB Garamond";
+    --secondary-font: "Poppins";
+}
+
+.primary-font {
+    font-family: var(--primary-font);
+    color: var(--primary-text-color);
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.secondary-font {
+    font-family: var(--secondary-font);
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    transition: 0.4s ease;
+}
+
+body {
+    /* border: 2px solid black; */
+}
+
+.nav-bar {
+    /* border: 2px solid black; */
+}
+
+/* navigation section */
+.nav-logo-title {
+    color: var(--primary-text-color);
+}
+
+.nav-button {
+    /* border: 2px solid black; */
+    align-self: center;
+}
+
+.nav-btn {
+    /* border: 2px solid black; */
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+}
+
+nav li:hover {
+    scale: 1.05;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+.nav-btn:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
