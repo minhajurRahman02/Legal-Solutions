@@ -27,11 +27,7 @@
 }
 
 body {
-    /* border: 2px solid black; */
-}
-
-.nav-bar {
-    /* border: 2px solid black; */
+    border: 2px solid black;
 }
 
 /* navigation section */
@@ -50,7 +46,7 @@ body {
     border-radius: 8px;
     background-color: var(--primary-color);
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 nav li:hover {
@@ -64,4 +60,47 @@ nav a:hover {
 .nav-btn:hover {
     scale: 1.05;
     cursor: pointer;
+}
+
+/* responsive design */
+/* medium device */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .nav-bar {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .nav-logo-img {
+        width: 100%;
+    }
+}
+
+
+/* small device */
+@media screen and (max-width: 576px) {
+    .nav-bar {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .nav-links {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .nav-logo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .nav-logo-img {
+        width: 100%;
+    }
 }
