@@ -19,7 +19,14 @@
 .primary-font-2 {
     font-family: var(--primary-font-family);
     color: var(--primary-text-color);
-    font-size: 32px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.primary-font-3 {
+    font-family: var(--primary-font-family);
+    color: var(--primary-text-color);
+    font-size: 24px;
     font-weight: 800;
 }
 
@@ -135,6 +142,15 @@ nav a:hover {
     background-size: cover;
 }
 
+/* qna section */
+.qna-card {
+    background-color: var(--border-color);
+    border-radius: 15px;
+    padding: 20px;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
 /* responsive design */
 /* medium device */
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -168,6 +184,13 @@ nav a:hover {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         align-items: center;
+    }
+
+    .qna-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 10px;
     }
 }
 
@@ -213,4 +236,16 @@ nav a:hover {
         justify-items: center;
         align-items: center;
     }
+
+    .qna-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .qna-img {
+        width: 100%;
+    }
+
 }
