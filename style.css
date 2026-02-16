@@ -54,9 +54,6 @@ body {
 }
 
 /* navigation section */
-.nav-logo-title {
-    color: var(--primary-text-color);
-}
 
 .nav-button {
     /* border: 2px solid black; */
@@ -101,10 +98,6 @@ nav a:hover {
         justify-items: center;
     }
 
-    .nav-logo-img {
-        width: 100%;
-    }
-
     .banner-content {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -139,16 +132,6 @@ nav a:hover {
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
         justify-items: center;
-    }
-
-    .nav-logo {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        justify-items: center;
-    }
-
-    .nav-logo-img {
-        width: 100%;
     }
 
     .banner-content {
