@@ -4,6 +4,7 @@
     --primary-color: #B68C5A;
     --primary-text-color: #414040;
     --secondary-text-color: #707070;
+    --border-color: #E7E7E7;
     --primary-font-family: "EB Garamond";
     --secondary-font-family: "Poppins";
 }
@@ -11,7 +12,14 @@
 .primary-font {
     font-family: var(--primary-font-family);
     color: var(--primary-text-color);
-    font-size: 38px;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.primary-font-2 {
+    font-family: var(--primary-font-family);
+    color: var(--primary-text-color);
+    font-size: 32px;
     font-weight: 800;
 }
 
@@ -87,6 +95,23 @@ nav a:hover {
     border: none;
     border-radius: 8px;
 }
+
+.lp-card {
+    padding: 40px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+.lp-card img {
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.bi-arrow-right-circle-fill {
+    color: var(--primary-color);
+}
+
+
 
 /* responsive design */
 /* medium device */
