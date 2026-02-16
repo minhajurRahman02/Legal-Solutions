@@ -4,26 +4,49 @@
     --primary-color: #B68C5A;
     --primary-text-color: #414040;
     --secondary-text-color: #707070;
-    --primary-font: "EB Garamond";
-    --secondary-font: "Poppins";
+    --primary-font-family: "EB Garamond";
+    --secondary-font-family: "Poppins";
 }
 
 .primary-font {
-    font-family: var(--primary-font);
+    font-family: var(--primary-font-family);
     color: var(--primary-text-color);
     font-size: 38px;
     font-weight: 800;
 }
 
 .secondary-font {
-    font-family: var(--secondary-font);
+    font-family: var(--secondary-font-family);
     color: var(--secondary-text-color);
     font-size: 16px;
     font-weight: 400;
 }
 
+.primary-banner-font {
+    font-family: var(--primary-font-family);
+    font-size: 72px;
+    font-weight: 800;
+    color: white;
+}
+
+.secondary-banner-font {
+    font-family: var(--secondary-font-family);
+    color: #E7E7E7;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.primary-btn {
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+}
+
 * {
     transition: 0.4s ease;
+    box-sizing: border-box;
 }
 
 body {
@@ -40,15 +63,6 @@ body {
     align-self: center;
 }
 
-.nav-btn {
-    /* border: 2px solid black; */
-    border: none;
-    border-radius: 8px;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 10px 20px;
-}
-
 nav li:hover {
     scale: 1.05;
 }
@@ -57,9 +71,24 @@ nav a:hover {
     color: var(--primary-color);
 }
 
-.nav-btn:hover {
+.primary-btn:hover {
     scale: 1.05;
     cursor: pointer;
+}
+
+/* banner section */
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.banner-input {
+    background-color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
 }
 
 /* responsive design */
@@ -74,6 +103,24 @@ nav a:hover {
 
     .nav-logo-img {
         width: 100%;
+    }
+
+    .banner-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .banner-content h1 {
+        font-size: 40px;
+    }
+
+    .banner-search-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        justify-items: center;
     }
 }
 
@@ -102,5 +149,24 @@ nav a:hover {
 
     .nav-logo-img {
         width: 100%;
+    }
+
+    .banner-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        justify-items: center;
+        padding: 20px 0px;
+    }
+
+    .banner-search-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .banner-content h1 {
+        font-size: 40px;
     }
 }
