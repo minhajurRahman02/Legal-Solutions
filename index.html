@@ -22,8 +22,8 @@
 
 <!-- border-2 border-black -->
 
-<body class="w-4/5 mx-auto">
-    <header>
+<body class="">
+    <header class="w-4/5 mx-auto">
         <nav class="nav-bar flex justify-between my-5">
             <img class="nav-logo-image" src="images/logo2.png" alt="">
             <div class="nav-content flex secondary-font">
@@ -69,7 +69,7 @@
         </section>
     </header>
 
-    <main>
+    <main class="w-4/5 mx-auto">
         <section class="legal-practice w-4/5 mx-auto mb-20">
             <div class="lp-text w-4/5 mx-auto mb-14">
                 <h2 class="lp-heading primary-font text-center p-2.5">The Legal Practice Area</h2>
@@ -241,6 +241,52 @@
             </div>
         </section>
     </main>
+    <footer class="bg-gray-950">
+        <div class="footer-content w-11/12 mx-auto py-20 grid grid-cols-4 gap-5">
+            <div class="justice grid grid-cols-1 gap-2.5">
+                <img class="footer-logo" src="images/logo.png" alt="">
+                <p class="secondary-banner-font-2">There are many variations of passages of Lorem Ipsum available,
+                    but
+                    the
+                    majority have suffered
+                    alteration in some form, by injected humour.</p>
+            </div>
+            <div class="useful-links secondary-banner-font-2 text-center">
+                <h3 class="primary-banner-font-2 pb-4">Useful Links</h3>
+                <ul class="secondary-banner-font-2 leading-8">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Cases</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="contact-now">
+                <h3 class="primary-banner-font-2 pb-4">Contact Now</h3>
+                <p class="secondary-banner-font-2">555 4th 5t NW, Washington <br>
+                    DC 20530, United States</p>
+                <br>
+                <p class="secondary-banner-font-2">+88 01750 000 000 <br>
+                    +88 01750 000 000</p>
+                <br>
+                <p class="secondary-banner-font-2">info@gmail.com <br>
+                    info@gmail.com</p>
+            </div>
+            <div class="subscription">
+                <h3 class="primary-banner-font-2 pb-4">Subscribe</h3>
+                <p class="secondary-banner-font-2">Subscribe for our latest & Articles. We Won't Give You Spam Mails
+                </p>
+                <div class="subscription-form secondary-banner-font-2 flex justify-between text-center">
+                    <label for="subscriber"></label>
+                    <input class="bg-gray-300 text-gray-600 p-2.5 grow" type="text" name="subscriber" id="subscriber"
+                        placeholder="Email Addres">
+                    <button>
+                        <i class="primary-btn bi bi-send"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
